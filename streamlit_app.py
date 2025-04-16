@@ -110,5 +110,5 @@ if submitted:
         label="📥 Download My Personality Career Report as PDF",
         data=buffer,
         file_name=f"{name.replace(' ', '_')}_career_report.pdf",
-        mime ="application/pdf"
+        mime="application/pdf"
     )
