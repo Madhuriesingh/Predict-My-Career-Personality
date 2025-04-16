@@ -9,6 +9,7 @@ from reportlab.lib.pagesizes import letter
 st.title("🎓 Predict-My-Career-Personality")
 st.subheader("Let's build your personality profile!")
 
+# Force the earliest date allowed to 1925
 min_dob = datetime.date(1925, 1, 1)
 max_dob = datetime.date.today()
 
@@ -19,7 +20,7 @@ with st.form("student_form"):
     city = st.text_input("City")
     state = st.text_input("State")
     country = st.text_input("Country")
-    dob = st.date_input("Date of Birth", value=datetime.date(2010, 1, 1), min_value=min_dob, max_value=max_dob)
+    dob = st.date_input("Date of Birth", value=datetime.date(2000, 1, 1), min_value=min_dob, max_value=max_dob)
 
     # Personality questions (expanded set)
     st.markdown("### Personality Discovery Questions:")
